@@ -1,7 +1,7 @@
 # import analysis_tools.import_fields_xr as import_fields_xr
-import sectional_v2.util.naming_conventions.var_info
+import oas_dev.util.naming_conventions.var_info
 # import analysis_tools.fix_xa_dataset as fix_xa_dataset
-# from sectional_v2.util.plot import  plot_settings
+# from oas_dev.util.plot import  plot_settings
 from sectional_v2.data_info import get_nice_name_case, get_area_specs
 from sectional_v2.util.slice_average.area_mod import lon180_2lon360
 from sectional_v2.util.slice_average.avg_pkg import average_model_var  # , get_lat_wgts_matrix, masked_average

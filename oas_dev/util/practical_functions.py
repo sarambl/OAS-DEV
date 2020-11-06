@@ -5,9 +5,9 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 # import analysis_tools.naming_conventions.var_info
-from sectional_v2.util.filenames import get_filename_pressure_coordinate_field
+from oas_dev.util.filenames import get_filename_pressure_coordinate_field
 
-from sectional_v2.util.naming_conventions import var_info
+from oas_dev.util.naming_conventions import var_info
 
 
 def make_folders(path):

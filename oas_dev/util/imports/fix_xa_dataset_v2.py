@@ -1,7 +1,7 @@
-from sectional_v2 import constants
+from oas_dev import constants
 import numpy as np
 import xarray as xr
-from sectional_v2.util.slice_average import area_mod
+from oas_dev.util.slice_average import area_mod
 import useful_scit.util.log as log
 xr.set_options(keep_attrs=True)
 

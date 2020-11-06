@@ -6,11 +6,11 @@ import xarray as xr
 import useful_scit.util.log as log
 from useful_scit.util.make_folders import make_folders
 
-from sectional_v2.constants import import_constants as import_constants_list
-from sectional_v2.util.filenames import get_filename_constants
-from sectional_v2.util.naming_conventions import find_model_case_name
-from sectional_v2 import constants
-from sectional_v2.util.imports.fix_xa_dataset_v2 import xr_fix
+from oas_dev.constants import import_constants as import_constants_list
+from oas_dev.util.filenames import get_filename_constants
+from oas_dev.util.naming_conventions import find_model_case_name
+from oas_dev import constants
+from oas_dev.util.imports.fix_xa_dataset_v2 import xr_fix
 xr.set_options(keep_attrs=True)
 # %%
 

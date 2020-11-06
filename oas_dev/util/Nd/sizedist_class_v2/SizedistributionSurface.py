@@ -1,11 +1,11 @@
-from sectional_v2.util.imports.fix_xa_dataset_v2 import xr_fix
-from sectional_v2.util.collocate.collocate import CollocateModel
-from sectional_v2.util.Nd.sizedist_class_v2 import Sizedistribution, get_nrSEC_varname, _get_nconc_varname, \
+from oas_dev.util.imports.fix_xa_dataset_v2 import xr_fix
+from oas_dev.util.collocate.collocate import CollocateModel
+from oas_dev.util.Nd.sizedist_class_v2 import Sizedistribution, get_nrSEC_varname, _get_nconc_varname, \
     _get_nmr_varname, _get_sig_varname
-from sectional_v2.util.imports.import_fields_xr_v2 import xr_import_NorESM
-from sectional_v2.util.plot.lineplots import plot_seasonal_plots
-from sectional_v2.util.practical_functions import make_folders
-from sectional_v2 import constants
+from oas_dev.util.imports.import_fields_xr_v2 import xr_import_NorESM
+from oas_dev.util.plot.lineplots import plot_seasonal_plots
+from oas_dev.util.practical_functions import make_folders
+from oas_dev import constants
 import xarray as xr
 import matplotlib.pyplot as plt
 

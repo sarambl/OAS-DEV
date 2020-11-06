@@ -8,22 +8,22 @@ from matplotlib import pyplot as plt, pylab as plt
 from scipy.stats import lognorm
 
 #import analysis_tools.plot_settings
-import sectional_v2.util.naming_conventions.var_info
-from sectional_v2.util.plot import plot_settings
+import oas_dev.util.naming_conventions.var_info
+from oas_dev.util.plot import plot_settings
 
 
 #from analysis_tools import var_overview_sql, import_fields_xr, fix_xa_dataset, practical_functions, \
 #    practical_functions as practical_functions
-from sectional_v2.scrap import import_fields_xr, fix_xa_dataset
-from sectional_v2.util import practical_functions,var_overview_sql
+from oas_dev.scrap import import_fields_xr, fix_xa_dataset
+from oas_dev.util import practical_functions,var_overview_sql
 
-from sectional_v2.util.plot.plot_settings import set_plot_vars, set_equal_axis
-from sectional_v2.util.practical_functions import get_filename_Nd, get_foldername_Nd, make_folders, save_dataset_to_netcdf
-from sectional_v2.util.naming_conventions.var_info import get_varname_Nd, get_fancylabel_Nd
+from oas_dev.util.plot.plot_settings import set_plot_vars, set_equal_axis
+from oas_dev.util.practical_functions import get_filename_Nd, get_foldername_Nd, make_folders, save_dataset_to_netcdf
+from oas_dev.util.naming_conventions.var_info import get_varname_Nd, get_fancylabel_Nd
 #from analysis_tools.sizedistrib import varlist, vars_N_EC_Earth, N2radi_EC_Earth, N2sigma_EC_Earth, vars_N_ECHAM, \
 #    N2radi_ECHAM, N2sigma_ECHAM, get_filename_avg_sizedist_dtset
 
-from sectional_v2.scrap.sizedistrib import varlist, vars_N_EC_Earth, N2radi_EC_Earth, N2sigma_EC_Earth, vars_N_ECHAM, \
+from oas_dev.scrap.sizedistrib import varlist, vars_N_EC_Earth, N2radi_EC_Earth, N2sigma_EC_Earth, vars_N_ECHAM, \
     N2radi_ECHAM, N2sigma_ECHAM, get_filename_avg_sizedist_dtset
 
 def import_and_calculate_Nd(caseName, path, toNd, fromNd=0, path_savePressCoord='', model_name='NorESM', from_year=0,

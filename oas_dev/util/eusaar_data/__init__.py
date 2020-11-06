@@ -5,8 +5,8 @@ import pandas
 import seaborn
 from matplotlib import pyplot
 
-from sectional_v2.constants import path_eusaar_data, path_eusaar_outdata  # path_eusaar_data
-from sectional_v2.constants import project_base_path
+from oas_dev.constants import path_eusaar_data, path_eusaar_outdata  # path_eusaar_data
+from oas_dev.constants import project_base_path
 import numpy as np
 # %%
 from glob import glob
@@ -15,13 +15,13 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from useful_scit.imps import (plt, sns, pd)
 
-from sectional_v2.data_info import get_nice_name_case
-from sectional_v2.util.plot.colors import get_case_col
+from oas_dev.data_info import get_nice_name_case
+from oas_dev.util.plot.colors import get_case_col
 
 p_histc = path_eusaar_data + '/HISTC/'
 p_gen = path_eusaar_data + '/GEN/'
 p_distc = path_eusaar_data + '/DISTC/'
-station_table_path =project_base_path + 'SECTIONAL_v2/sectional_v2/misc/eusaar_table2_asmi2011.csv'
+station_table_path =project_base_path + 'OAS-DEV/oas_dev/misc/eusaar_table2_asmi2011.csv'
 
 
 fl = glob(p_histc+'*')

@@ -1,4 +1,4 @@
-name: env_sec_v2
+name: env_oas_dev
 
 channels:
   - conda-forge

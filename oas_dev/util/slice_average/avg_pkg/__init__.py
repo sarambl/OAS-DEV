@@ -1,8 +1,8 @@
 import numpy as np
 import xarray as xr
 # import analysis_tools.area_pkg_sara
-from sectional_v2.util.imports.get_fld_fixed import get_field_fixed
-from sectional_v2.util.imports.import_fields_xr_v2 import import_constants
+from oas_dev.util.imports.get_fld_fixed import get_field_fixed
+from oas_dev.util.imports.import_fields_xr_v2 import import_constants
 from sectional_v2.util.slice_average import area_mod
 #from sectional_v2.util.slice_average.avg_pkg import maps
 # import analysis_tools.var_overview_sql

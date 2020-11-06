@@ -6,10 +6,10 @@
 #if __name__ == '__main__':
 #    unittest.main()
 from useful_scit.imps import (plt)
-import sectional_v2.constants as constants
-from sectional_v2.util.Nd.sizedist_class_v2 import Sizedistribution
+import oas_dev.constants as constants
+from oas_dev.util.Nd.sizedist_class_v2 import Sizedistribution
 import useful_scit.util.log as log
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
 log.ger.setLevel(log.log.DEBUG)
 
 pmin = 850.  # minimum pressure level
@@ -86,7 +86,7 @@ a = s.get_sizedist_var()
 
 #cm =
 # %%
-from sectional_v2.util.collocate.collocate import CollocateModel
+from oas_dev.util.collocate.collocate import CollocateModel
 cm = CollocateModel(case, from_t, to_t, isSectional=True, time_res='month')
 a =cm.load_sizedist_dataset([minDiameter, maxDiameter])
 

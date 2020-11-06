@@ -4,11 +4,11 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from sectional_v2.constants import path_eusaar_data
-from sectional_v2.util.eusaar_data import time_h, station_codes, long_name_var_dic, standard_varlist_histc, \
+from oas_dev.constants import path_eusaar_data
+from oas_dev.util.eusaar_data import time_h, station_codes, long_name_var_dic, standard_varlist_histc, \
     savepath_histc_vars
-from sectional_v2.util.eusaar_data.flags import load_gd
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.util.eusaar_data.flags import load_gd
+from oas_dev.util.practical_functions import make_folders
 
 
 def load_data_timeseries(station, var):

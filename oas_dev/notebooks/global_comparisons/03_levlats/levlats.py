@@ -3,12 +3,12 @@ import matplotlib.colors as colors
 from IPython import get_ipython
 from useful_scit.imps import (np, plt)
 
-from sectional_v2.data_info import get_nice_name_case
-from sectional_v2.util.imports import get_averaged_fields
-from sectional_v2.util.imports.get_fld_fixed import get_field_fixed
-from sectional_v2.util.plot.plot_levlat import plot_levlat_diff, get_cbar_eq_kwargs
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.data_info import get_nice_name_case
+from oas_dev.util.imports import get_averaged_fields
+from oas_dev.util.imports.get_fld_fixed import get_field_fixed
+from oas_dev.util.plot.plot_levlat import plot_levlat_diff, get_cbar_eq_kwargs
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
 
 # noinspection PyBroadException
 try:
@@ -204,7 +204,7 @@ for case in cases:
 #dummy = xr.merge([dummy, ds_constants])
 # %%
 from useful_scit.util.zarray import corr
-from sectional_v2.util.plot.plot_levlat import plot_levlat
+from oas_dev.util.plot.plot_levlat import plot_levlat
 # %%
 cases_ctrl=cases_orig
 case_oth = cases_sec[0]

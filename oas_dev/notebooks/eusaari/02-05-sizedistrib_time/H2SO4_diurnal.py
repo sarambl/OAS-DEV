@@ -41,7 +41,7 @@ to_t = '2008-06-01'
 import xarray as xr
 
 # %%
-f1 = '/home/ubuntu/mnts/nird/projects//Output_data_SECTIONAL_SCHEME//collocated_ds//NorESM/SECTv21_ctrl/H2SO4_SECTv21_ctrl_2009-05-01_2009-06-01_hour_locations.nc'
+f1 = '/home/ubuntu/mnts/nird/projects//Output_data_OAS-DEV//collocated_ds//NorESM/SECTv21_ctrl/H2SO4_SECTv21_ctrl_2009-05-01_2009-06-01_hour_locations.nc'
 da = xr.open_dataset(f1).sel(station='SMR')#.sel(time=slice(from_t, to_t))
 
 # %%
@@ -61,15 +61,15 @@ plt.legend()
 _da.mean('hour')['H2SO4'].plot()
 
 # %%
-f1 = '/home/ubuntu/mnts/nird/projects//Output_data_SECTIONAL_SCHEME//collocated_ds//NorESM/SECTv21_ctrl/dNdlogD_sec_SECTv21_ctrl_2008-01-01_2009-01-01_hour_locations.nc'
+f1 = '/home/ubuntu/mnts/nird/projects//Output_data_OAS-DEV//collocated_ds//NorESM/SECTv21_ctrl/dNdlogD_sec_SECTv21_ctrl_2008-01-01_2009-01-01_hour_locations.nc'
 da = xr.open_dataset(f1).isel(lev=-1).sel(station='SMR').sel(time=slice(from_t, to_t))
 
 # %%
-f2 = '/home/ubuntu/mnts/nird/projects//Output_data_SECTIONAL_SCHEME//collocated_ds//NorESM/SECTv21_ctrl_koagD/dNdlogD_sec01_SECTv21_ctrl_koagD_2008-01-01_2009-01-01_hour_locations.nc'
+f2 = '/home/ubuntu/mnts/nird/projects//Output_data_OAS-DEV//collocated_ds//NorESM/SECTv21_ctrl_koagD/dNdlogD_sec01_SECTv21_ctrl_koagD_2008-01-01_2009-01-01_hour_locations.nc'
 da2 = xr.open_dataset(f2).isel(lev=-1).sel(station='SMR').sel(time=slice(from_t, to_t))['dNdlogD_sec01']
 for i in range(2,6):
     dNdlogD = f'dNdlogD_sec0{i}'
-    f2 = f'/home/ubuntu/mnts/nird/projects//Output_data_SECTIONAL_SCHEME//collocated_ds//NorESM/SECTv21_ctrl_koagD/{dNdlogD}_SECTv21_ctrl_koagD_2008-01-01_2009-01-01_hour_locations.nc'
+    f2 = f'/home/ubuntu/mnts/nird/projects//Output_data_OAS-DEV//collocated_ds//NorESM/SECTv21_ctrl_koagD/{dNdlogD}_SECTv21_ctrl_koagD_2008-01-01_2009-01-01_hour_locations.nc'
     _da2 = xr.open_dataset(f2).isel(lev=-1).sel(station='SMR').sel(time=slice(from_t, to_t))[dNdlogD]
     da2 = da2+_da2
     

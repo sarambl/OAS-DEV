@@ -1,39 +1,34 @@
 import os
-import socket
 from useful_scit.util.make_folders import make_folders
 import pandas as pd
+#####################################################################
+# FILL IN FILEPATHS:
+#####################################################################
+# fill in path to project location (not including /OAS-DEV)
+project_base_path = '/home/ubuntu/mnts/nird/projects/'
+# name:
+project_name = 'OAS-DEV'
+# Fill in path to raw input data from NorESM:
+raw_data_path_NorESM = project_base_path + 'model_output/archive/'
+# Fill in path to raw input data from EUSAAR
+path_eusaar_data = project_base_path + '/EUSAAR_data'
 
-from sectional_v2.project_root import get_project_base
+# Output processed data to:
+path_outdata = project_base_path + '/Output_data_' + project_name + '/'
 
-TEST_MODE=False
-LOCAL_DATA_MODE=False
+#####################################################################
+# END FILL IN PART (no need to edit under this line)
+#####################################################################
 
-project_name = 'SECTIONAL_SCHEME'
-hostname = socket.gethostname()
-## Raw data path:
-nird_project_code = 'NS9066K'
-if nird_project_code=='NS9066K':
-    _data_folder = 'model_output/archive/'
-elif nird_project_code=='NS2806K':
-    _data_folder = 'archive_new/'
-
-# root:
-project_base_path = get_project_base(hostname, nird_project_code)#, testmode=TEST_MODE)
-if not LOCAL_DATA_MODE:
-    raw_data_path_NorESM = project_base_path + _data_folder
-else:
-    raw_data_path_NorESM = '/persistent01/model_output/archive/'
 pathdic_raw_data = {'NorESM': raw_data_path_NorESM}#[file_source]}
 
 def get_input_datapath(model = 'NorESM', file_source=None):
-    if file_source is None:
-        file_source = hostname
     return pathdic_raw_data[model]
 
 
 ## Plots path:
 path_plots = project_base_path + '/Plots_' + project_name + '/'
-paths_plotsave=dict(maps=path_plots + 'maps/',
+paths_plotsave= dict(maps=path_plots + 'maps/',
                     comparison=path_plots + 'global_comparison/',
                     lineprofiles = path_plots + 'lineprofiles/',
                     sizedist = path_plots+'sizedistribution/',
@@ -47,36 +42,19 @@ def get_plotpath(key):
     else:
         return path_plots+'/'+key + '/'
 
-# OBSERVATIONAL
-if TEST_MODE:
-    path_eusaar_data = project_base_path + 'SECTIONAL_v2/test_data/EUSAAR_data/'
-
-else:
-    path_eusaar_data = project_base_path + '/EUSAAR_data'
 
 path_EBAS_data=project_base_path + '/EBAS_data'
-
-
-## Output data:
-
-
-
-#if TEST_MODE:
-path_outdata = project_base_path + '/Output_data_' + project_name + '/'
-
 # eusaar reformatted data:
-if TEST_MODE:
-    path_eusaar_outdata = path_eusaar_data + '/EUSAAR_data/'
-else:
-    path_eusaar_outdata = path_eusaar_data + '/EUSAAR_data/'
+path_eusaar_outdata = path_eusaar_data
 
 
 def get_outdata_base():
     return path_outdata
-print(path_outdata)
+
+
 outpaths={}
-outpaths['pressure_coords']=path_outdata + '/Fields_pressure_coordinates'
-outpaths['original_coords']=path_outdata + '/computed_fields_ng'
+outpaths['pressure_coords']= path_outdata + '/Fields_pressure_coordinates'
+outpaths['original_coords']= path_outdata + '/computed_fields_ng'
 outpaths['computed_fields_ng']=path_outdata + '/computed_fields_ng' #native grid computed fields
 outpaths['pressure_coords_converstion_fields'] = path_outdata +'/Pressure_coordinates_conversion_fields'
 outpaths['pressure_density_path'] =path_outdata + '/Pressure_density'
@@ -101,7 +79,7 @@ def get_outdata_path(key):
 make_folders(path_outdata)
 
 # data info
-path_data_info = project_base_path + 'SECTIONAL_v2/sectional_v2/data_info/'
+path_data_info = project_base_path + 'OAS-DEV/oas_dev/data_info/'
 
 
 # output locations:
@@ -148,8 +126,6 @@ import_always_include = ['P0', 'area', 'landfrac', 'hyam', 'hybm', 'PS', 'gw', '
 
 import_constants = ['P0', 'GRIDAREA', 'landfrac', 'hyam', 'hybm', 'gw', 'LOGR',
                     'hyai', 'hybi', 'ilev', 'LANDFRAC']
-#not_pressure_coords = ['P0', 'area', 'landfrac', 'date', 'hyam', 'hybm', 'PS', 'gw', 'LANDFRAC', 'LOGR', 'Press_surf', 'ps', 'aps',
-#                  'hyai', 'hybi', 'ilev']
 not_pressure_coords = ['P0','hyam', 'hybm', 'PS', 'gw', 'LOGR', 'aps',
                   'hyai', 'hybi', 'ilev', 'date']
 

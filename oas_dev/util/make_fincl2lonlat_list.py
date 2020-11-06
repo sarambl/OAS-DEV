@@ -1,4 +1,4 @@
-from sectional_v2.constants import collocate_locations, locations, path_locations_file
+from oas_dev.constants import collocate_locations, locations, path_locations_file
 
 print(locations)
 

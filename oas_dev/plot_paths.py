@@ -1,4 +1,4 @@
-from sectional_v2.constants import project_base_path, project_name
+from oas_dev.constants import project_base_path, project_name
 
 print(project_name)
 

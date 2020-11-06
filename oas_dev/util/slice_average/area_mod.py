@@ -11,8 +11,8 @@ import socket
 import cartopy.crs as ccrs
 import matplotlib.pylab as plt
 import xarray as xr
-from sectional_v2 import constants
-from sectional_v2.data_info import get_area_specs
+from oas_dev import constants
+from oas_dev.data_info import get_area_specs
 
 seconds_in_year = 365 * 24 * 60 * 60
 seconds_in_month = 30 * 24 * 60 * 60

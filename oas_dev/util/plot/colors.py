@@ -1,8 +1,8 @@
-from sectional_v2.constants import path_data_info
+from oas_dev.constants import path_data_info
 from useful_scit.imps import (ucp, pd, np)
 from random import randint
 
-from sectional_v2.data_info import get_area_specs
+from oas_dev.data_info import get_area_specs
 
 path_case_overview=path_data_info + '/case_overview.csv'
 case_overv = pd.read_csv(path_case_overview, index_col=0)

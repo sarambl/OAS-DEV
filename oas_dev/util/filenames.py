@@ -1,5 +1,5 @@
 import numpy as np
-from sectional_v2 import constants
+from oas_dev import constants
 
 path_to_global_avg = constants.get_outdata_path('area_means')
 path_to_map_avg = constants.get_outdata_path('map_means')

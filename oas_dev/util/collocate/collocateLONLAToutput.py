@@ -2,11 +2,11 @@ import os
 import time
 import pandas as pd
 
-from sectional_v2.util.imports.fix_xa_dataset_v2 import xr_fix
+from oas_dev.util.imports.fix_xa_dataset_v2 import xr_fix
 import xarray as xr
-from sectional_v2.util.collocate.collocate import CollocateModel
+from oas_dev.util.collocate.collocate import CollocateModel
 from dask.diagnostics import ProgressBar
-from sectional_v2.constants import collocate_locations
+from oas_dev.constants import collocate_locations
 import re
 
 
@@ -62,7 +62,7 @@ def get_unique_vars(ds):
 
 # %%
 
-# p = '/home/ubuntu/mnts/nird/projects/Output_data_SECTIONAL_SCHEME/collocated_ds/NorESM/SECTv11_ctrl/NCONC01_SECTv11_ctrl_2007-02-01_2008-01-01_h_locations.nc'
+# p = '/home/ubuntu/mnts/nird/projects/Output_data_OAS-DEV/collocated_ds/NorESM/SECTv11_ctrl/NCONC01_SECTv11_ctrl_2007-02-01_2008-01-01_h_locations.nc'
 # a = xr.open_dataset(p)
 
 

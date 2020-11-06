@@ -2,11 +2,11 @@ import os
 
 import xarray as xr
 
-from sectional_v2 import constants
-from sectional_v2.util.filenames import get_filename_ng_field
-from sectional_v2.util.imports.fix_xa_dataset_v2 import xr_fix
-from sectional_v2.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
-from sectional_v2.util.imports.import_fields_xr_v2 import xr_import_NorESM
+from oas_dev import constants
+from oas_dev.util.filenames import get_filename_ng_field
+from oas_dev.util.imports.fix_xa_dataset_v2 import xr_fix
+from oas_dev.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
+from oas_dev.util.imports.import_fields_xr_v2 import xr_import_NorESM
 # %%
 
 def get_field_fixed(case, varlist, from_time, to_time, raw_data_path=constants.get_input_datapath(),

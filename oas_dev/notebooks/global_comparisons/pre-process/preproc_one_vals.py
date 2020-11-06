@@ -91,7 +91,7 @@ for area in areas:
 
 # %%
 
-fn='/home/ubuntu/mnts/nird/projects//Output_data_SECTIONAL_SCHEME/Fields_pressure_coordinates/NorESM/SECTv21_ctrl_koagD/N_AER_NorESM_SECTv21_ctrl_koagD_2008-01-2009-12.nc'
+fn='/home/ubuntu/mnts/nird/projects//Output_data_OAS-DEV/Fields_pressure_coordinates/NorESM/SECTv21_ctrl_koagD/N_AER_NorESM_SECTv21_ctrl_koagD_2008-01-2009-12.nc'
 
 # %%
 ds = xr.open_dataset(fn)

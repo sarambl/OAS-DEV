@@ -4,9 +4,9 @@ import matplotlib.ticker as mtick
 from matplotlib.ticker import ScalarFormatter
 import useful_scit.plot.plot
 import numpy as np
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 import matplotlib.pyplot as plt
-from sectional_v2.util.naming_conventions.var_info import get_fancy_var_name, get_fancy_unit_xr
+from oas_dev.util.naming_conventions.var_info import get_fancy_var_name, get_fancy_unit_xr
 
 
 # %%

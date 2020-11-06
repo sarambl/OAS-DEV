@@ -62,7 +62,7 @@ def launch_monthly_station_output(case, isSectional, max_launches=5, from_time='
     l_df['status'] = l_df.apply(update_stat_proc, axis=1)
     check_stat_proc(l_df)
     pyf = sys.executable  # "/persistent01/miniconda3/envs/env_sec_v2/bin/python3"
-    file = project_base_path + 'SECTIONAL_v2/sectional_v2/notebooks/eusaari/01-preprocess/01-01-preprocess-model-output_station_subproc.py'
+    file = project_base_path + 'OAS-DEV/sectional_v2/notebooks/eusaari/01-preprocess/01-01-preprocess-model-output_station_subproc.py'
     log.ger.info(f'Calculating with {pyf}')
     # while loop:
     notDone = True

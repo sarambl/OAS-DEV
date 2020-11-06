@@ -1,7 +1,7 @@
 from pathlib import Path
 from useful_scit.imps import (pd, np, xr, plt)
 import pandas as pd
-from sectional_v2.constants import path_data_info
+from oas_dev.constants import path_data_info
 path_area_defs = Path(path_data_info) / 'area_defs.csv'
 path_case_overview = Path(path_data_info) / 'case_overview.csv'
 print(path_area_defs)

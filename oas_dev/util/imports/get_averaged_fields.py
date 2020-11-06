@@ -1,6 +1,6 @@
-import sectional_v2.util.slice_average.avg_pkg as avg_pkg
-import sectional_v2.util.imports.get_pressure_coord_fields
-from sectional_v2.util.slice_average.avg_pkg import maps
+import oas_dev.util.slice_average.avg_pkg as avg_pkg
+import oas_dev.util.imports.get_pressure_coord_fields
+from oas_dev.util.slice_average.avg_pkg import maps
 import sectional_v2.util.slice_average.avg_pkg.levlat
 import sectional_v2.util.slice_average.avg_pkg.one_value
 import sectional_v2.util.slice_average.avg_pkg.profiles

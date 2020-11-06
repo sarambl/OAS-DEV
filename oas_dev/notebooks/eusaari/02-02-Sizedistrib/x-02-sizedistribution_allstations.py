@@ -15,8 +15,8 @@
 # %%
 import xarray as xr
 
-from sectional_v2.util.Nd.sizedist_class_v2 import SizedistributionStation
-from sectional_v2.util.eusaar_data.eusaar_noresm import compute_all_subsets_percs_flag, get_all_distc_noresm
+from oas_dev.util.Nd.sizedist_class_v2 import SizedistributionStation
+from oas_dev.util.eusaar_data.eusaar_noresm import compute_all_subsets_percs_flag, get_all_distc_noresm
 from useful_scit.util.make_folders import make_folders
 
 
@@ -76,7 +76,7 @@ dic_finish['SECTv21_ctrl']
 # # %load_ext autoreload
 # # %autoreload 2
 import numpy as np
-from sectional_v2.util.eusaar_data import  distc_var  # import load_var_as_dtframe
+from oas_dev.util.eusaar_data import  distc_var  # import load_var_as_dtframe
 import matplotlib.pyplot as plt
 from useful_scit.plot import get_cmap_dic
 

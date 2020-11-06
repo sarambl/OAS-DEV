@@ -15,7 +15,7 @@ To replicate the software environment, please do:
 ```bash 
 conda env create -f env_oas_dev.yml
 conda activate env_oas_dev
-conda conda develop sectional_v2
+conda conda develop .
 ```
 
 Please note that some of the data processing is memory heavy

@@ -1,0 +1,11 @@
+**/Data
+**/.ipynb_checkpoints
+**/__pycache__
+*.pyc
+/test_data/
+
+
+git filter-branch --force --index-filter \
+  'git rm --cached --ignore-unmatch sectional_v2/notebooks/eusaari/Ndat.csv' \
+  --prune-empty --tag-name-filter cat -- --all
+/.idea/

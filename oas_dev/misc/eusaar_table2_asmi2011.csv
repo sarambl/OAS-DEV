@@ -1,0 +1,25 @@
+Station name,Station code,Country,"Coordinates, altitude",Categorya,Instrument,Reference,Region,Altitude category,lat,lon,altitude
+Aspvreten,ASP,SE,"58 ◦ 48 N,17 ◦ 23 E, 30 m",,DMPS,Tunved et al. (2004),Nordic and Baltic,"Low altitude sites (less than 1000 m a.s.l.)",58.8,17.3833333333333, 30 m
+Birkenes b,BIR,NO,"58 ◦ 23 N,8 ◦ 15 E, 190 m",2,DMPS,Amunsen et al. (1992),Nordic and Baltic,"Low altitude sites (less than 1000 m a.s.l.)",58.3833333333333,8.25, 190 m
+Pallas,PAL,FI,"67 ◦ 58 N,24 ◦ 7 E, 560 m",,DMPS,Lihavainen et al. (2008),Nordic and Baltic,"Low altitude sites (less than 1000 m a.s.l.)",67.9666666666667,24.1166666666667, 560 m
+Preila,PLA,LT,"55 ◦ 55 N,21 ◦ 0 E, 5 m",6,SMPS,Ulevicius et al. (2010),Nordic and Baltic,"Low altitude sites (less than 1000 m a.s.l.)",55.9166666666667,21, 5 m
+SMEAR II,SMR,FI,"61 ◦ 51 N,24 ◦ 17 E, 181 m",,DMPS,Hari and Kulmala (2005),Nordic and Baltic,"Low altitude sites (less than 1000 m a.s.l.)",61.85,24.2833333333333, 181 m
+Vavihill,VHL,SE,"56 ◦ 1 N,13 ◦ 9 E, 172 m",,DMPS,Kristensson et al. (2008),Nordic and Baltic,"Low altitude sites (less than 1000 m a.s.l.)",56.0166666666667,13.15, 172 m
+Bösel,BOS,DE,"53 ◦ 0 N,7 ◦ 57 E, 16 m",,SMPS,Birmili et al. (2009a),Central Europe,"Low altitude sites (less than 1000 m a.s.l.)",53,7.95, 16 m
+K-Puszta,KPO,HU,"46 ◦ 58 N,19 ◦ 33 E, 125 m",1,DMPS,Kiss et al. (2002),Central Europe,"Low altitude sites (less than 1000 m a.s.l.)",46.9666666666667,19.55, 125 m
+Melpitz,MPZ,DE,"51 ◦ 32 N,12 ◦ 54 E, 87 m",,DMPS,Engler et al. (2007),Central Europe,"Low altitude sites (less than 1000 m a.s.l.)",51.5333333333333,12.9, 87 m
+Kosetice,OBK,CZ,"49 ◦ 35 N,15 ◦ 5 E, 534 m",1,SMPS,C̆ervenková and Ván̆a (2010),Central Europe,"Low altitude sites(less than 1000 m a.s.l.)",49.5833333333333,15.0833333333333, 534 m
+Hohenpeissenberg,HPB,DE,"47 ◦ 48 N,11 ◦ 0 E, 988 m",1,SMPS,Birmili et al. (2003),Central Europe,"Low altitude sites (less than 1000 m a.s.l.)",47.8,11, 988 m
+Waldhof,WAL,DE,"52 ◦ 31 N,10 ◦ 46 E, 70 m",,SMPS,Birmili et al. (2009a),Central Europe,"Low altitude sites (less than 1000 m a.s.l.)",52.5166666666667,10.7666666666667, 70 m
+"Cabauw","CBW",NL,"51 ◦ 18 N,4 ◦ 55 E, 60 m",3,SMPS,Russchenberg et al. (2005),Western Europe,"Low altitude sites (less than 1000 m a.s.l.)",51.3,4.91666666666667, 60 m
+Harwell,HWL,UK,"51 ◦ 34 N,1 ◦ 19 W, 60 m",3,SMPS,Charron et al. (2007),Western Europe,"Low altitude sites (less than 1000 m a.s.l.)",51.5666666666667,1.31666666666667, 60 m
+Mace Head,MHD,IE,"53 ◦ 19 N,9 ◦ 53 W, 5 m",5,SMPS,Jennings et al. (1991),Western Europe,"Low altitude sites (less than 1000 m a.s.l.)",53.3166666666667,9.88333333333333, 5 m
+"Finokalia","FKL",GR,"35 ◦ 20 N,25 ◦ 40 E, 250 m",2,SMPS,Mihalopoulos et al. (1997),Mediterranean,"Low altitude sites (less than 1000 m a.s.l.)",35.3333333333333,25.6666666666667, 250 m
+JRC-Ispra,ISP,IT,"45 ◦ 49 N,8 ◦ 38 E, 209 m",3,DMPS,Gruening et al. (2009),Mediterranean,"Low altitude sites (less than 1000 m a.s.l.)",45.8166666666667,8.63333333333333, 209 m
+"Zeppelin",ZEP,NO,"78 ◦ 55 N,11 ◦ 54 E, 474 m",,DMPS,Ström et al. (2003),Arctic,"Low altitude sites (less than 1000 m a.s.l.)",78.9166666666667,11.9, 474 m
+"Puy de Dôme",PDD,FR,"45 ◦ 46 N,2 ◦ 57 E, 1465 m",4,SMPS,Venzac et al. (2009),Western Europe,"High altitude sites (over 1000 m a.s.l.)",45.7666666666667,2.95, 1465 m
+Schauinsland,SCH,DE,"47 ◦ 55 N,7 ◦ 55 E, 1210 m",1,SMPS,Birmili et al. (2009a),Central Europe,"High altitude sites (over 1000 m a.s.l.)",47.9166666666667,7.91666666666667, 1210 m
+Zugspitze,ZSF,DE,"47 ◦ 25 N,10 ◦ 59 E, 2650 m",4,SMPS,Birmili et al. (2009a),Central Europe,"High altitude sites (over 1000 m a.s.l.)",47.4166666666667,10.9833333333333, 2650 m
+Jungfraujoch,JFJ,CH,"46 ◦ 32 N,7 ◦ 59 E, 3580 m",2,SMPS,Jurányi et al. (2011),Central Europe,"High altitude sites (over 1000 m a.s.l.)",46.5333333333333,7.98333333333333, 3580 m
+BEO Moussala,BEO,BG,"42 ◦ 10 N,23 ◦ 35 E, 2971 m",,SMPS,Nojarov et al. (2009),Balkans,"High altitude sites (over 1000 m a.s.l.)",42.1666666666667,23.5833333333333, 2971 m
+Monte Cimone,CMN,IT,"44 ◦ 11 N,10 ◦ 41 E, 2165 m",4,DMPS,Marinoni et al. (2008),Mediterranean,"High altitude sites (over 1000 m a.s.l.)",44.1833333333333,10.6833333333333, 2165 m

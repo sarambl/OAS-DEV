@@ -1,0 +1,5 @@
+var_name,from_diameter,to_diameter,eusaar,nice_name
+N250,250.,500.,True,N$_{250}$
+N30-50,30.,50.,True,N$_{30-50}$
+N50,50.,500.,True,N$_{50-500}$
+N100,100.,500.,True,N$_{100-500}$

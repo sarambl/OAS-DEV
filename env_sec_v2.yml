@@ -1,0 +1,42 @@
+name: env_sec_v2
+
+channels:
+  - conda-forge
+  - nordicesmhub
+  - defaults
+  - anaconda
+
+dependencies:
+  - python=3.6
+  - numpy >=1.11.0
+  - iris >=2.1.0
+  - xarray >=0.10.8
+  - pandas >=0.22.0
+  - cartopy >=0.16.0
+  - numpy >=1.14
+  - matplotlib
+  - seaborn >=0.8.1
+  - geopy >=1.17.0
+  - netcdf4
+  - cis
+  - bokeh
+  - pyaerocom
+  - metpy
+  - jupyter
+  - ipykernel<5.0.0
+  - notebook >=5.6.0
+  - jupytext
+  - nodejs
+  - scipy
+  - scikit-learn
+  - jupyterlab
+  - PyTables
+  - pynio
+  - pyngl
+  - pip:
+    - dask-labextension
+    - jupyter
+    - jupyterlab-latex
+    - jupyterlab-templates
+    - git+https:https://github.com/daliagachc/useful-scit.git
+prefix: /persistent01/miniconda3/envs/env_sara

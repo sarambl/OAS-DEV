@@ -1,11 +1,11 @@
 from matplotlib import pyplot, colors
 from useful_scit.plot import get_cmap_dic
 
-from sectional_v2 import constants as constants
-from sectional_v2.constants import paths_plotsave
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
-from sectional_v2.util.plot.Nd_plot import plot_sizedist_time
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev import constants as constants
+from oas_dev.constants import paths_plotsave
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
+from oas_dev.util.plot.Nd_plot import plot_sizedist_time
+from oas_dev.util.practical_functions import make_folders
 import matplotlib.pyplot as plt
 
 def plot_sizedist_time_cases(cases, ss_start_t, ss_end_t, location, figsize=[14,15],

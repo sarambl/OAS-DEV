@@ -1,10 +1,10 @@
-from sectional_v2.constants import get_outdata_path, collocate_locations
+from oas_dev.constants import get_outdata_path, collocate_locations
 import xarray as xr
 from pathlib import Path
 import shutil
 
 # %%
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.util.practical_functions import make_folders
 
 dir_collocated = get_outdata_path('collocated')
 

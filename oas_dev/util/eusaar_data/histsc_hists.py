@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from sectional_v2.util.eusaar_data import p_gen, p_histc, station_codes
+from oas_dev.util.eusaar_data import p_gen, p_histc, station_codes
 
 
 row_name_hists = ['N30-50 all time',

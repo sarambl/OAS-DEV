@@ -3,8 +3,8 @@ import pandas
 from matplotlib import pyplot
 
 # import analysis_tools.practical_functions
-import sectional_v2.util.naming_conventions.var_info
-from sectional_v2.util import  practical_functions
+import oas_dev.util.naming_conventions.var_info
+from oas_dev.util import  practical_functions
 import pandas as pd
 import numpy as np
 
@@ -95,12 +95,12 @@ def plot_bars_2gr_diff(axs, ctrl, nested_cases, relative, sens_cases, var, versi
     abs_df.loc[ctrl, :].plot.bar(ax=axs[0], legend=False)#, fontsize=FONT_SIZE)
     diff_df.plot.bar(ax=axs[1])#, fontsize=FONT_SIZE)
     d_xr = nested_cases[versions_dic[versions[0]][ctrl]][var]
-    axs[0].set_ylabel(sectional_v2.util.naming_conventions.var_info.get_fancy_var_name_xr(d_xr, var) +
-                      ' [%s]' % sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(d_xr, var))#, fontsize=FONT_SIZE)
+    axs[0].set_ylabel(oas_dev.util.naming_conventions.var_info.get_fancy_var_name_xr(d_xr, var) +
+                      ' [%s]' % oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(d_xr, var))#, fontsize=FONT_SIZE)
     if relative:
-        axs[1].set_ylabel(sectional_v2.util.naming_conventions.var_info.get_fancy_var_name_xr(d_xr, var) + ' [%]')#,
+        axs[1].set_ylabel(oas_dev.util.naming_conventions.var_info.get_fancy_var_name_xr(d_xr, var) + ' [%]')#,
                           #fontsize=FONT_SIZE)
     else:
-        axs[1].set_ylabel(sectional_v2.util.naming_conventions.var_info.get_fancy_var_name_xr(d_xr, var) +
-                          ' [%s]' % sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(d_xr, var))#, fontsize=FONT_SIZE)
+        axs[1].set_ylabel(oas_dev.util.naming_conventions.var_info.get_fancy_var_name_xr(d_xr, var) +
+                          ' [%s]' % oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(d_xr, var))#, fontsize=FONT_SIZE)
     plt.legend()#fontsize=FONT_SIZE)

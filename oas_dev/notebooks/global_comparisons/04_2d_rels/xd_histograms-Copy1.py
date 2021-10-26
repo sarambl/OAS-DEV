@@ -15,17 +15,17 @@
 # %%
 import matplotlib
 
-from sectional_v2.data_info import get_nice_name_case
-from sectional_v2.util.imports.import_fields_xr_v2 import import_constants
-from sectional_v2.util.imports.get_fld_fixed import get_field_fixed
+from oas_dev.data_info import get_nice_name_case
+from oas_dev.util.imports.import_fields_xr_v2 import import_constants
+from oas_dev.util.imports.get_fld_fixed import get_field_fixed
 from useful_scit.imps import (np, xr, plt, pd)
 
 # load and autoreload
 from IPython import get_ipython
 
 # noinspection PyBroadException
-from sectional_v2.util.naming_conventions import var_info
-from sectional_v2.util.naming_conventions.var_info import get_fancy_var_name
+from oas_dev.util.naming_conventions import var_info
+from oas_dev.util.naming_conventions.var_info import get_fancy_var_name
 
 try:
     _ipython = get_ipython()
@@ -39,8 +39,8 @@ model = 'NorESM'
 
 # %%
 
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
 
 plot_path = get_plotpath('comparison') + '/scatter/'
 print(plot_path)

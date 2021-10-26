@@ -13,10 +13,10 @@
 # ---
 
 # %%
-from sectional_v2.util.eusaar_data import *
-import sectional_v2.util.eusaar_data as lfc
-import sectional_v2.util.eusaar_data
-from sectional_v2.constants import get_plotpath
+from oas_dev.util.eusaar_data import *
+import oas_dev.util.eusaar_data as lfc
+import oas_dev.util.eusaar_data
+from oas_dev.constants import get_plotpath
 
 # %%
 # load and autoreload
@@ -32,7 +32,7 @@ except:
     pass
 
 # %%
-from sectional_v2.constants import get_outdata_path
+from oas_dev.constants import get_outdata_path
 path_in = get_outdata_path('eusaar')
 version ='_noresmv21_dd'
 file_in = path_in + 'Nd_cat_sources_timeseries%s.csv'%version
@@ -57,7 +57,7 @@ eusaar='eusaar'
 # ## Plotting functions:
 
 # %%
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 
 def plot_jointplot_cases(ddic, eusaar, cases, unit, var, xl, ul=1.5, ll=4.):
     for case in cases:
@@ -108,10 +108,10 @@ def plot_station_by_station(ddic, cases, typ, var):
     """
     case_dic={}
     for case in cases:
-        case_dic[case]=sectional_v2.util.eusaar_data.get_dif(ddic, case, typ=typ)
-    #sec_d = sectional_v2.util.eusaar_data.get_dif(ddic, sec, typ=typ)
-    #nsec_d = sectional_v2.util.eusaar_data.get_dif(ddic, nsec, typ=typ)
-    fig, axs = sectional_v2.util.eusaar_data.plot_hist_grid_cases(case_dic, var)
+        case_dic[case]=oas_dev.util.eusaar_data.get_dif(ddic, case, typ=typ)
+    #sec_d = oas_dev.util.eusaar_data.get_dif(ddic, sec, typ=typ)
+    #nsec_d = oas_dev.util.eusaar_data.get_dif(ddic, nsec, typ=typ)
+    fig, axs = oas_dev.util.eusaar_data.plot_hist_grid_cases(case_dic, var)
     fp = plot_path + '/%s_seas_station_diff_distrib_%s' % (var, version)
     # fig.set_size_inches(18.5, 10.5)
     fig.tight_layout(pad=1)
@@ -123,8 +123,8 @@ def plot_station_by_station(ddic, cases, typ, var):
 def call_print_improvements(df_dic, nsec, qM, qm, sec, var, xl):
     ddic = get_ddic(df_dic, nsec, qM, qm, sec, var, xl)
     typ = 'norm'
-    sec_d = sectional_v2.util.eusaar_data.get_dif(ddic, sec, typ=typ)
-    nsec_d = sectional_v2.util.eusaar_data.get_dif(ddic, nsec, typ=typ)
+    sec_d = oas_dev.util.eusaar_data.get_dif(ddic, sec, typ=typ)
+    nsec_d = oas_dev.util.eusaar_data.get_dif(ddic, nsec, typ=typ)
     print_improvements(nsec_d, sec_d)
     return typ
 
@@ -155,11 +155,11 @@ def plots_var(df=None, var='N30-100', qM=.98, qm=.02,cases=cases,
 
     df_dic={}
     for case in cases + [eusaar]:
-        df_dic[case]=sectional_v2.util.eusaar_data.clean_df(df,sc=case)
+        df_dic[case]=oas_dev.util.eusaar_data.clean_df(df,sc=case)
     #df_dic = {
-    #    eusaar: sectional_v2.util.eusaar_data.clean_df(df, sc=eusaar),
-    #    sec: sectional_v2.util.eusaar_data.clean_df(df, sc=sec),
-    #    nsec: sectional_v2.util.eusaar_data.clean_df(df, sc=nsec),
+    #    eusaar: oas_dev.util.eusaar_data.clean_df(df, sc=eusaar),
+    #    sec: oas_dev.util.eusaar_data.clean_df(df, sc=sec),
+    #    nsec: oas_dev.util.eusaar_data.clean_df(df, sc=nsec),
     #}
     # yl = nsec
     # yl = nsec
@@ -167,7 +167,7 @@ def plots_var(df=None, var='N30-100', qM=.98, qm=.02,cases=cases,
     # qM = .98
     # qm = .02
 
-    ddic = sectional_v2.util.eusaar_data.get_ddic_cases(df_dic, cases, qM, qm,var, eusaar)
+    ddic = oas_dev.util.eusaar_data.get_ddic_cases(df_dic, cases, qM, qm,var, eusaar)
 
     plot_eusaar_diff_seas(df_dic, cases, var, qM, qm, eusaar)
 

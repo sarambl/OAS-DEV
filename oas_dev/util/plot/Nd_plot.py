@@ -1,14 +1,14 @@
 #import sensitivity_scripts
-import sectional_v2.util.plot.make_break_axis as mba
+import oas_dev.util.plot.make_break_axis as mba
 from matplotlib import colors, pyplot
 
-from sectional_v2.util.plot import plot_settings
+from oas_dev.util.plot import plot_settings
 #to_make_figures_paper.make_break_axis as mba
-from sectional_v2.util import practical_functions
+from oas_dev.util import practical_functions
 import seaborn as sns
 #import analysis_tools.Nd_pkg
-#from sectional_v2.util.Nd import  Nd_pkg
-from sectional_v2.util.plot.plot_settings import  set_equal_axis
+#from oas_dev.util.Nd import  Nd_pkg
+from oas_dev.util.plot.plot_settings import  set_equal_axis
 import matplotlib.pyplot as plt
 import numpy as np
 

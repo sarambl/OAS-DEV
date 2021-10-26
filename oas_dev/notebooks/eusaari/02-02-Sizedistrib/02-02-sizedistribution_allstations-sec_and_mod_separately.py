@@ -15,8 +15,8 @@
 # %%
 import xarray as xr
 
-from sectional_v2.util.Nd.sizedist_class_v2 import SizedistributionStation
-from sectional_v2.util.eusaar_data.eusaar_noresm import compute_all_subsets_percs_flag, get_all_distc_noresm
+from oas_dev.util.Nd.sizedist_class_v2 import SizedistributionStation
+from oas_dev.util.eusaar_data.eusaar_noresm import compute_all_subsets_percs_flag, get_all_distc_noresm
 from useful_scit.util.make_folders import make_folders
 
 
@@ -87,7 +87,7 @@ dic_finish['SECTv21_ctrl_koagD']
 # # %load_ext autoreload
 # # %autoreload 2
 import numpy as np
-from sectional_v2.util.eusaar_data import  distc_var  # import load_var_as_dtframe
+from oas_dev.util.eusaar_data import  distc_var  # import load_var_as_dtframe
 import matplotlib.pyplot as plt
 from useful_scit.plot import get_cmap_dic
 
@@ -119,7 +119,7 @@ dic_finish['eusaar'] = ds_eusaar
 
 # %%
 
-from sectional_v2.constants import collocate_locations, paths_plotsave, collocate_locations, collocate_locations
+from oas_dev.constants import collocate_locations, paths_plotsave, collocate_locations, collocate_locations
 
 
 # %%
@@ -173,12 +173,12 @@ coll_ltr = collocate_locations.transpose()
 
 
 # %%
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 
 # %%
 from useful_scit.plot import get_cmap_dic
-from sectional_v2.constants import collocate_locations, paths_plotsave, collocate_locations, collocate_locations
-from sectional_v2.util.plot.colors import get_case_col
+from oas_dev.constants import collocate_locations, paths_plotsave, collocate_locations, collocate_locations
+from oas_dev.util.plot.colors import get_case_col
 
 
 def plot_grid(dic_finish, subs = 'TOT', st_ls=None, name='all_stations', ylim=[5,8.8e3],
@@ -427,7 +427,7 @@ plot_grid(dic_finish,subs = 'SPR',  ylim=[0,8e3])
 plot_grid(dic_finish,subs = 'AUT',  ylim=[0,8e3])
 
 # %%
-from sectional_v2.constants import collocate_locations
+from oas_dev.constants import collocate_locations
 station='ASP'
 colors_source = get_cmap_dic(dic_finish.keys())
 colors_source['EUSAAR']='k'
@@ -446,7 +446,7 @@ for station in dic_finish[cases[0]].coords['station'].values:
     plt.legend()
     plt.show()
 # %%
-from sectional_v2.constants import collocate_locations
+from oas_dev.constants import collocate_locations
 station='ASP'
 colors_source = get_cmap_dic(dic_finish.keys())
 colors_source['EUSAAR']='k'

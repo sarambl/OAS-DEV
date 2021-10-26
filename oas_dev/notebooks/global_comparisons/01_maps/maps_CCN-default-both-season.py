@@ -13,9 +13,9 @@
 # ---
 
 # %%
-from sectional_v2.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map, subplots_map, plot_map_diff_2case,plot_map_diff_only
+from oas_dev.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map, subplots_map, plot_map_diff_2case,plot_map_diff_only
 from useful_scit.imps import (np, xr, plt, pd) 
-from sectional_v2.util.imports import get_averaged_fields
+from oas_dev.util.imports import get_averaged_fields
 from IPython.display import clear_output
 
 # load and autoreload
@@ -51,8 +51,8 @@ if avg_over_lev:
 p_levels = [1013.,900., 800., 700., 600.]  # used if not avg
 
 # %%
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
 version='v21dd_both'
 plot_path = get_plotpath('maps')
 filen_base = plot_path+'/_%s'%version
@@ -72,8 +72,8 @@ cases =[to_case]+from_cases
 
 
 # %%
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
 
 #plot_path = get_plotpath('maps')
 #filen_base = plot_path+'/_%s'%version
@@ -843,7 +843,7 @@ dff2_ = maps_dic[cases[2]][['DIR_Ghan']]- maps_dic[cases[0]][['DIR_Ghan']]#['DIR
 print(cases[2])
 
 # %%
-from sectional_v2.util.slice_average.avg_pkg import average_model_var
+from oas_dev.util.slice_average.avg_pkg import average_model_var
 
 # %%
 average_model_var(dff_, 'DIR_Ghan', area='Global')

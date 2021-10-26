@@ -6,12 +6,12 @@ from matplotlib.lines import Line2D
 import matplotlib.ticker as mtick
 from matplotlib.ticker import ScalarFormatter
 
-from sectional_v2.data_info import get_area_defs_pd
-from sectional_v2.util.naming_conventions.var_info import get_fancy_var_name
+from oas_dev.data_info import get_area_defs_pd
+from oas_dev.util.naming_conventions.var_info import get_fancy_var_name
 
-import sectional_v2.util.naming_conventions.var_info
-from sectional_v2.util import practical_functions
-from sectional_v2.util.plot.colors import get_area_col
+import oas_dev.util.naming_conventions.var_info
+from oas_dev.util import practical_functions
+from oas_dev.util.plot.colors import get_area_col
 
 
 # %%
@@ -46,7 +46,7 @@ def plot_profile(da, ax, xscale='log', yscale='log', label='', ylim=[1e3, 100], 
     if pressure_coords:
         ax.set_ylabel('Pressure [hPa]')
     var = da.name
-    xlabel = get_fancy_var_name(var) + ' [%s]' % sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(da,
+    xlabel = get_fancy_var_name(var) + ' [%s]' % oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(da,
                                                                                                                  var)
     ax.set_xlabel(xlabel)
     ax.grid(True, which='both')
@@ -65,8 +65,8 @@ def plot_var_multicase(ax, var, nested_cases, cases, pltkwargs={}, area='', area
         else:
             plot_profile(nested_cases[case][var], ax=ax, label=label, kwargs={**pltkwargs, 'color': linecolor})
     xlab = '%s [%s]' % (
-    sectional_v2.util.naming_conventions.var_info.get_fancy_var_name_xr(nested_cases[case][var], var),
-    sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(nested_cases[case][var], var))
+    oas_dev.util.naming_conventions.var_info.get_fancy_var_name_xr(nested_cases[case][var], var),
+    oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(nested_cases[case][var], var))
     ax.set_xlabel(xlab)
 
 

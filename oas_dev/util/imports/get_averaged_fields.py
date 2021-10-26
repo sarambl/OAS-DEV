@@ -1,15 +1,15 @@
 import oas_dev.util.slice_average.avg_pkg as avg_pkg
 import oas_dev.util.imports.get_pressure_coord_fields
 from oas_dev.util.slice_average.avg_pkg import maps
-import sectional_v2.util.slice_average.avg_pkg.levlat
-import sectional_v2.util.slice_average.avg_pkg.one_value
-import sectional_v2.util.slice_average.avg_pkg.profiles
-from sectional_v2.util.imports.get_fld_fixed import get_field_fixed
-from sectional_v2.util.imports.import_fields_xr_v2 import import_constants
+import oas_dev.util.slice_average.avg_pkg.levlat
+import oas_dev.util.slice_average.avg_pkg.one_value
+import oas_dev.util.slice_average.avg_pkg.profiles
+from oas_dev.util.imports.get_fld_fixed import get_field_fixed
+from oas_dev.util.imports.import_fields_xr_v2 import import_constants
 import numpy as np
 import xarray as xr
 
-from sectional_v2.constants import get_input_datapath
+from oas_dev.constants import get_input_datapath
 # %%
 
 
@@ -369,7 +369,7 @@ def get_area_avg_nested(models, cases, varList, area, from_time, to_time,
             first = True
             for var in varList:
                 # Check if data already calculated:
-                ds_avg, var_loaded = sectional_v2.util.slice_average.avg_pkg.one_value.load_area_file_var(model,
+                ds_avg, var_loaded = oas_dev.util.slice_average.avg_pkg.one_value.load_area_file_var(model,
                                                                                                           case,
                                                                                                           var,
                                                                                                           area,
@@ -394,7 +394,7 @@ def get_area_avg_nested(models, cases, varList, area, from_time, to_time,
                                                     model=model)
                     dummy = xr.merge([dummy, ds_constants])
 
-                    ds_avg = sectional_v2.util.slice_average.avg_pkg.one_value.get_average_area(dummy,
+                    ds_avg = oas_dev.util.slice_average.avg_pkg.one_value.get_average_area(dummy,
                                                                                                 [var], case,
                                                                                                 area, from_time,
                                                                                                 to_time, model, pmin,

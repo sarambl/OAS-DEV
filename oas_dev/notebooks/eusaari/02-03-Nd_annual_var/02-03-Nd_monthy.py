@@ -13,14 +13,13 @@
 # ---
 
 # %%
-from sectional_v2.util.eusaar_data import *
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
-from sectional_v2.constants import collocate_locations
-from sectional_v2.util.plot.colors import get_case_col
-from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes, mark_inset
-from mpl_toolkits.axes_grid1.anchored_artists import AnchoredSizeBar
-
+from oas_dev.util.eusaar_data import *
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
+from oas_dev.constants import collocate_locations
+from oas_dev.util.plot.colors import get_case_col
+import pandas as pd
+import seaborn as sns
 # %% [markdown]
 # # load and autoreload
 
@@ -37,7 +36,7 @@ except:
     pass
 
 # %%
-from sectional_v2.constants import get_outdata_path
+from oas_dev.constants import get_outdata_path
 
 version = '_noresmv21_dd'
 path_in = get_outdata_path('eusaar')
@@ -106,7 +105,7 @@ df_masked = df[df['flag_gd']]
 df_median_month, df_perc16_month, df_perc84_month = get_med_percs(df_masked)
 
 # %%
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 
 
 # %% [markdown]
@@ -136,7 +135,7 @@ def get_ordered_stations():
 
 
 # %%
-from useful_scit.util.pd_fix import pd_custom_sort_values
+from oas_dev.util import pd_custom_sort_values
 
 
 # %%
@@ -362,8 +361,8 @@ ylim_dic = {
     'Overlap':[0,3000],
     'North': [0,3000],
     'Center':[0,3000],
-    'South (spring)':,
-    'South (winter)':
+    'South (spring)':None,
+    'South (winter)':None
 }
 
 # %%

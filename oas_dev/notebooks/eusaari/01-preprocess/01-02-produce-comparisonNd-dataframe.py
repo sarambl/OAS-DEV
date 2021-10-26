@@ -17,9 +17,9 @@ from useful_scit.imps import (xr, plt, np, pd)
 from useful_scit.util.make_folders import make_folders
 # %load_ext autoreload
 # %autoreload 2
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
-from sectional_v2.util.collocate.collocateLONLAToutput import CollocateLONLATout
-from sectional_v2.constants import sized_varListNorESM
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
+from oas_dev.util.collocate.collocateLONLAToutput import CollocateLONLATout
+from oas_dev.constants import sized_varListNorESM
 #from useful_scit.util import log
 import useful_scit.util.log as log
 log.ger.setLevel(log.log.INFO)
@@ -30,7 +30,7 @@ log.ger.setLevel(log.log.INFO)
 # ## Savepath:
 
 # %%
-from sectional_v2.constants import get_outdata_path
+from oas_dev.constants import get_outdata_path
 path_out = get_outdata_path('eusaar')
 version ='_noresmv21_dd'#_noresm2'#_fbvoc'
 file_out = path_out + 'Nd_cat_sources_timeseries%s.csv'%version
@@ -132,11 +132,11 @@ for case_name in dic_mod_all:
 # ## Import eusaar
 
 # %%
-from sectional_v2.constants import path_eusaar_data# path_eusaar_data
+from oas_dev.constants import path_eusaar_data# path_eusaar_data
 import numpy as np
-from sectional_v2.util import eusaar_data
-from sectional_v2.util.eusaar_data.histc_vars import load_var_as_dtframe
-from sectional_v2.util.eusaar_data import  distc_var, histc_vars, histsc_hists # import load_var_as_dtframe
+from oas_dev.util import eusaar_data
+from oas_dev.util.eusaar_data.histc_vars import load_var_as_dtframe
+from oas_dev.util.eusaar_data import  distc_var, histc_vars, histsc_hists # import load_var_as_dtframe
 import matplotlib.pyplot as plt
 from useful_scit.plot import get_cmap_dic
 
@@ -165,7 +165,7 @@ st_ds['N30-100']=st_ds['N30-50']+st_ds['N50-100']
 st_ds['time']
 
 # %%
-from sectional_v2.util.eusaar_data.flags import load_flags_allstations
+from oas_dev.util.eusaar_data.flags import load_flags_allstations
 flags = load_flags_allstations()
 
 # %%

@@ -37,7 +37,7 @@ except:
     pass
 
 # %%
-from sectional_v2.util.slice_average.significance import load_and_plot_sign
+from oas_dev.util.slice_average.significance import load_and_plot_sign
 
 
 # %%
@@ -302,7 +302,7 @@ plt.show()
 
 # %%
 from useful_scit.util.zarray import corr
-from sectional_v2.util.plot.plot_levlat import plot_levlat
+from oas_dev.util.plot.plot_levlat import plot_levlat
 # %% [markdown]
 # ### Load data:
 
@@ -400,9 +400,9 @@ corr_plt(var_c,['N_AER','NMR01'])
 
 # %%
 from useful_scit.util.zarray import corr
-from sectional_v2.util.plot.plot_levlat import plot_levlat
+from oas_dev.util.plot.plot_levlat import plot_levlat
 # %%
-from sectional_v2.util.plot.plot_maps import subplots_map, fix_axis4map_plot, plt_map
+from oas_dev.util.plot.plot_maps import subplots_map, fix_axis4map_plot, plt_map
 
 # %%
 cases_ctrl=cases_orig

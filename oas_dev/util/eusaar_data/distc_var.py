@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from sectional_v2.util.eusaar_data import p_gen, p_distc, station_codes, subs_codes, years_codes
-from sectional_v2.constants import path_eusaar_outdata
+from oas_dev.util.eusaar_data import p_gen, p_distc, station_codes, subs_codes, years_codes
+from oas_dev.constants import path_eusaar_outdata
 savepath_distc_vars = path_eusaar_outdata + 'distc_vars.nc'
 percs_in_eusaar_files = [5., 16., 50., 84., 95.] # percentiles in files
 

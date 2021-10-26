@@ -1,12 +1,12 @@
 
 import xarray as xr
 import useful_scit.util.log as log
-from sectional_v2.util.imports.import_fields_xr_v2 import xr_import_NorESM
-from sectional_v2 import constants
-from sectional_v2.util.imports.fix_xa_dataset_v2 import xr_fix
+from oas_dev.util.imports.import_fields_xr_v2 import xr_import_NorESM
+from oas_dev import constants
+from oas_dev.util.imports.fix_xa_dataset_v2 import xr_fix
 import os.path
-from sectional_v2.util.imports.hybridsig2pressure import hybsig2pres_vars
-from sectional_v2.util.filenames import get_filename_pressure_coordinate_field
+from oas_dev.util.imports.hybridsig2pressure import hybsig2pres_vars
+from oas_dev.util.filenames import get_filename_pressure_coordinate_field
 
 
 def get_pressure_coord_field(case, var, from_time, to_time, model='NorESM'):

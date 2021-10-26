@@ -23,11 +23,11 @@
 # %autoreload 2
 from useful_scit.imps import (np, plt)
 
-import sectional_v2.constants as constants
+import oas_dev.constants as constants
 import useful_scit.util.log as log
 
 # %%
-from sectional_v2.util.plot.combination_plots import plot_sizedist_time_cases, \
+from oas_dev.util.plot.combination_plots import plot_sizedist_time_cases, \
     plot_seasonal_surface_loc_sizedistributions
 
 avg_over_lev = True  # True#True#False#True
@@ -207,7 +207,7 @@ for var in ['nrSOA_SEC0%s'%ii for ii in range(1,6)]:
 (a['nrSO4_SEC05']+a['nrSOA_SEC05']).mean('time').mean('lev').plot(robust=True)
 
 # %%
-from sectional_v2.util.Nd.sizedist_class_v2 import get_bin_diameter
+from oas_dev.util.Nd.sizedist_class_v2 import get_bin_diameter
 get_bin_diameter(5)
 
 # %%

@@ -1,7 +1,7 @@
 import re
 
 import pandas as pd
-from sectional_v2.util.naming_conventions import constants
+from oas_dev.util.naming_conventions import constants
 
 path_var_overview = constants.path_var_overview
 

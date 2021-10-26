@@ -3,13 +3,13 @@ import numpy as np
 import os
 import os.path
 from dask.diagnostics import ProgressBar
-import sectional_v2.util.eusaar_data.distc_var as distc_var
+import oas_dev.util.eusaar_data.distc_var as distc_var
 
-from sectional_v2.constants import sized_varListNorESM
-from sectional_v2.util.practical_functions import make_folders
-from sectional_v2.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
-from sectional_v2.util.naming_conventions import find_model_case_name
-from sectional_v2 import constants
+from oas_dev.constants import sized_varListNorESM
+from oas_dev.util.practical_functions import make_folders
+from oas_dev.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
+from oas_dev.util.naming_conventions import find_model_case_name
+from oas_dev import constants
 import useful_scit.util.log as log
 import matplotlib.pyplot as plt
 import time

@@ -1,12 +1,12 @@
 # %%
-from sectional_v2.util.plot.plot_maps import fix_axis4map_plot, subplots_map, plt_map
-from sectional_v2.util.slice_average.avg_pkg import yearly_mean_dic
-from sectional_v2.util.imports import get_averaged_fields
+from oas_dev.util.plot.plot_maps import fix_axis4map_plot, subplots_map, plt_map
+from oas_dev.util.slice_average.avg_pkg import yearly_mean_dic
+from oas_dev.util.imports import get_averaged_fields
 
 # load and autoreload
 from useful_scit.imps import *
 
-from sectional_v2.util.slice_average.significance import get_significance_map_paired_monthly
+from oas_dev.util.slice_average.significance import get_significance_map_paired_monthly
 
 log.ger.setLevel(log.log.INFO)
 # %%

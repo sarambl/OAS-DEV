@@ -2,9 +2,9 @@ import os
 
 import xarray as xr
 
-from sectional_v2.util import practical_functions
-from sectional_v2.util.filenames import filename_map_avg
-from sectional_v2.util.slice_average.avg_pkg import get_fields4weighted_avg, average_model_var, \
+from oas_dev.util import practical_functions
+from oas_dev.util.filenames import filename_map_avg
+from oas_dev.util.slice_average.avg_pkg import get_fields4weighted_avg, average_model_var, \
     compute_weighted_averages, is_weighted_avg_var
 
 

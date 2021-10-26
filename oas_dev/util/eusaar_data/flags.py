@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from sectional_v2.constants import path_eusaar_data
-from sectional_v2.util.eusaar_data import time_h, savepath_histc_flags, station_codes
+from oas_dev.constants import path_eusaar_data
+from oas_dev.util.eusaar_data import time_h, savepath_histc_flags, station_codes
 
 
 def load_gd(station):

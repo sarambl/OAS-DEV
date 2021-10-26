@@ -1,16 +1,16 @@
 import os
 
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
-from sectional_v2.util.collocate.collocate import CollocateModel
-from sectional_v2.util.filenames import get_filename_pressure_coordinate_field, get_filename_ng_field
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
+from oas_dev.util.collocate.collocate import CollocateModel
+from oas_dev.util.filenames import get_filename_pressure_coordinate_field, get_filename_ng_field
 
-from sectional_v2.constants import sized_varListNorESM
-from sectional_v2.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
-from sectional_v2.util.Nd.sizedist_class_v2 import Sizedistribution
-from sectional_v2 import constants
-import sectional_v2.util.Nd.sizedist_class_v2.constants as constants_sizedist
-from sectional_v2.util.practical_functions import make_folders
-from sectional_v2.util.naming_conventions.var_info import get_varname_Nd
+from oas_dev.constants import sized_varListNorESM
+from oas_dev.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
+from oas_dev.util.Nd.sizedist_class_v2 import Sizedistribution
+from oas_dev import constants
+import oas_dev.util.Nd.sizedist_class_v2.constants as constants_sizedist
+from oas_dev.util.practical_functions import make_folders
+from oas_dev.util.naming_conventions.var_info import get_varname_Nd
 import numpy as np
 from scipy.stats import lognorm
 import useful_scit.util.log as log

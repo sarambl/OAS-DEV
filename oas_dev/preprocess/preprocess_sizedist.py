@@ -2,10 +2,10 @@
 from useful_scit.imps import (np, plt)
 
 ## Settings:
-import sectional_v2.constants as constants
-from sectional_v2.util.Nd.sizedist_class_v2 import Sizedistribution
+import oas_dev.constants as constants
+from oas_dev.util.Nd.sizedist_class_v2 import Sizedistribution
 import useful_scit.util.log as log
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
 log.ger.setLevel(log.log.DEBUG)
 
 pmin = 850.  # minimum pressure level
@@ -38,7 +38,7 @@ time_resolution = 'month'
 # %%
 
 
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionBins, SizedistributionSurfaceBins
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionBins, SizedistributionSurfaceBins
 def produce_binned_sizedist(cases_sec, cases_orig, from_t, to_t, minDiameter, maxDiameter,
                             history_field='.h0.', time_resolution='month'):
     for case in cases_sec:

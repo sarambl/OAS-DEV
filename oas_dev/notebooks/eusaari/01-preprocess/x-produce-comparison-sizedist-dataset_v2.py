@@ -18,8 +18,8 @@ import xarray as xr
 # ## Imports:
 
 # %%
-from sectional_v2.util.Nd.sizedist_class_v2 import SizedistributionStation
-from sectional_v2.util.eusaar_data.eusaar_noresm import compute_all_subsets_percs_flag, get_all_distc_noresm
+from oas_dev.util.Nd.sizedist_class_v2 import SizedistributionStation
+from oas_dev.util.eusaar_data.eusaar_noresm import compute_all_subsets_percs_flag, get_all_distc_noresm
 
 # %% [markdown]
 # ## Cases:

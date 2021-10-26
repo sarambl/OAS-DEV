@@ -1,5 +1,5 @@
-from sectional_v2.util.eusaar_data import time_h
-from sectional_v2.constants import path_eusaar_data
+from oas_dev.util.eusaar_data import time_h
+from oas_dev.constants import path_eusaar_data
 import netCDF4
 import numpy as np
 import pandas as pd

@@ -16,10 +16,10 @@
 from useful_scit.imps import *
 
 # %%
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionStation import SizedistributionStation
-from sectional_v2.util.collocate.collocateLONLAToutput import CollocateLONLATout
-from sectional_v2.constants import sized_varListNorESM, list_sized_vars_noresm, list_sized_vars_nonsec
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionStation import SizedistributionStation
+from oas_dev.util.collocate.collocateLONLAToutput import CollocateLONLATout
+from oas_dev.constants import sized_varListNorESM, list_sized_vars_noresm, list_sized_vars_nonsec
 #from useful_scit.util import log
 import useful_scit.util.log as log
 import time

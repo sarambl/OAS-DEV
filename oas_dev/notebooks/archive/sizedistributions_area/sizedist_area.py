@@ -15,9 +15,9 @@
 # %% jupyter={"outputs_hidden": true}
 from useful_scit.imps import (np, plt)
  
-import sectional_v2.constants as constants
+import oas_dev.constants as constants
 import useful_scit.util.log as log
-from sectional_v2.util.plot.combination_plots import plot_sizedist_time_cases, \
+from oas_dev.util.plot.combination_plots import plot_sizedist_time_cases, \
     plot_seasonal_surface_loc_sizedistributions
 
 
@@ -51,7 +51,7 @@ time_resolution = 'month'
 log.ger.setLevel(log.log.WARNING)
 
 # %%
-from sectional_v2.util.Nd.sizedist_class_v2 import Sizedistribution
+from oas_dev.util.Nd.sizedist_class_v2 import Sizedistribution
  
 def plot_seasonal_surface_loc_sizedistributions(cases_sec, cases_orig, from_t, to_t,
                                                 variables=['dNdlogD'],

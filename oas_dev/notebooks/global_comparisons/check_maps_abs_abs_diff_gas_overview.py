@@ -14,9 +14,9 @@
 # ---
 
 # %%
-from sectional_v2.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map
+from oas_dev.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map
 from useful_scit.imps import (np, xr, plt, pd) 
-from sectional_v2.util.imports import get_averaged_fields
+from oas_dev.util.imports import get_averaged_fields
 from IPython.display import clear_output
 
 # load and autoreload
@@ -96,7 +96,7 @@ axs = load_and_plot('N_AER', cases, startyear, endyear, avg_over_lev, pmin=pmin,
 #
 
 # %%
-from sectional_v2.util.plot.plot_maps import subplots_map
+from oas_dev.util.plot.plot_maps import subplots_map
 varl= ['nrSOA_SEC_tot', 'nrSO4_SEC_tot','nrSEC_tot' ]
 fig, axs = subplots_map(1, len(varl), figsize=[15,3])
 for var, ax in zip(varl,axs):
@@ -111,7 +111,7 @@ for var, ax in zip(varl,axs):
 plt.show()
 
 # %%
-from sectional_v2.util.plot.plot_maps import subplots_map
+from oas_dev.util.plot.plot_maps import subplots_map
 varl= ['cb_SOA_SEC01', 'cb_SOA_SEC02','cb_SOA_SEC03' ]
 fig, axs = subplots_map(1, len(varl), figsize=[15,3])
 for var, ax in zip(varl,axs):
@@ -243,7 +243,7 @@ axs = load_and_plot('N_AER', cases, startyear, endyear, avg_over_lev, pmin=pmin,
 #
 
 # %%
-from sectional_v2.util.plot.plot_maps import subplots_map
+from oas_dev.util.plot.plot_maps import subplots_map
 varl= ['nrSOA_SEC_tot', 'nrSO4_SEC_tot','nrSEC_tot' ]
 fig, axs = subplots_map(1, len(varl), figsize=[15,3])
 for var, ax in zip(varl,axs):
@@ -258,7 +258,7 @@ for var, ax in zip(varl,axs):
 plt.show()
 
 # %%
-from sectional_v2.util.plot.plot_maps import subplots_map
+from oas_dev.util.plot.plot_maps import subplots_map
 varl= ['cb_SOA_SEC01', 'cb_SOA_SEC02','cb_SOA_SEC03' ]
 fig, axs = subplots_map(1, len(varl), figsize=[15,3])
 for var, ax in zip(varl,axs):

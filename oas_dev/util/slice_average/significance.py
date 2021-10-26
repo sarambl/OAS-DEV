@@ -3,7 +3,7 @@ from cartopy import crs as ccrs
 from scipy import stats
 import numpy as np
 
-from sectional_v2.util.slice_average.avg_pkg import yearly_mean_dic
+from oas_dev.util.slice_average.avg_pkg import yearly_mean_dic
 # %%
 print('eee')
 # %%

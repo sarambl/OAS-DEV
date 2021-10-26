@@ -1,20 +1,20 @@
 import os
 
-from sectional_v2.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
+from oas_dev.util.imports.get_pressure_coord_fields import get_pressure_coord_fields
 
-from sectional_v2.util.imports.fix_xa_dataset_v2 import xr_fix
+from oas_dev.util.imports.fix_xa_dataset_v2 import xr_fix
 
-from sectional_v2.util.imports.import_fields_xr_v2 import xr_import_NorESM
+from oas_dev.util.imports.import_fields_xr_v2 import xr_import_NorESM
 from useful_scit.util import log
 
-from sectional_v2 import constants
+from oas_dev import constants
 import numpy as np
 import xarray as xr
-#from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
-from sectional_v2.util.naming_conventions import find_model_case_name
+#from oas_dev.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
+from oas_dev.util.naming_conventions import find_model_case_name
 import xarray as xr
-from sectional_v2.util import naming_conventions
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.util import naming_conventions
+from oas_dev.util.practical_functions import make_folders
 
 
 class Collocate:

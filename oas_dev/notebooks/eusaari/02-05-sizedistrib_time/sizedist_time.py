@@ -13,10 +13,10 @@
 # ---
 
 # %%
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionStation import SizedistributionStation
-from sectional_v2.util.collocate.collocateLONLAToutput import CollocateLONLATout
-from sectional_v2.constants import sized_varListNorESM, list_sized_vars_noresm, list_sized_vars_nonsec
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionStation import SizedistributionStation
+from oas_dev.util.collocate.collocateLONLAToutput import CollocateLONLATout
+from oas_dev.constants import sized_varListNorESM, list_sized_vars_noresm, list_sized_vars_nonsec
 #from useful_scit.util import log
 import useful_scit.util.log as log
 import time
@@ -72,7 +72,7 @@ for case_name in cases_orig:
 # ## EBAS data:
 
 # %%
-from sectional_v2.util.EBAS_data.sizedistrib import create_EBAS_sizedist, raw_data_EBAS
+from oas_dev.util.EBAS_data.sizedistrib import create_EBAS_sizedist, raw_data_EBAS
 
 # %%
 fn = raw_data_EBAS / 'FI0050R.20080101000000.20181205100800.dmps.particle_number_size_distribution.aerosol.1y.1h.FI03L_DMPS_HYY_01.FI03L_TRY_TDMPS.lev2.nc'
@@ -150,7 +150,7 @@ eb = create_EBAS_sizedist(fn)
 import matplotlib.pyplot as plt
 
 # %%
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 
 
 # %%
@@ -172,7 +172,7 @@ plt.tight_layout()
 # ## Melpiz
 
 # %%
-from sectional_v2.util.EBAS_data.sizedistrib import create_EBAS_sizedist, raw_data_EBAS
+from oas_dev.util.EBAS_data.sizedistrib import create_EBAS_sizedist, raw_data_EBAS
 
 # %%
 fn = raw_data_EBAS / 'DE0044R.20080101000000.20181205100800.dmps.particle_number_size_distribution.aerosol.1y.1h.DE08L_DMPS_IFT_MELPITZ02_until_20080818_.DE08L_IFT_DRY_TDMPS_until_20080818_DE08L_IFT_C.lev2.nc'
@@ -211,7 +211,7 @@ _ds['dNdlog10D'] =_ds['dNdlogD']*np.log(10)
 eb.plot_time_from_to(from_time=_from_time, to_time=_to_time, dataset=_ds.sel(station='SMR'), cmap='Reds')
 
 # %%
-from sectional_v2.util.EBAS_data.sizedistrib import create_EBAS_sizedist, raw_data_EBAS
+from oas_dev.util.EBAS_data.sizedistrib import create_EBAS_sizedist, raw_data_EBAS
 
 # %%
 fn = raw_data_EBAS / 'DE0044R.20080101000000.20181205100800.dmps.particle_number_size_distribution.aerosol.1y.1h.DE08L_DMPS_IFT_MELPITZ02_until_20080818_.DE08L_IFT_DRY_TDMPS_until_20080818_DE08L_IFT_C.lev2.nc'
@@ -358,7 +358,7 @@ drop_coords = [c for c in plt_da.coords if c not in ['time', 'diameter']]
 plt_da.drop(drop_coords).groupby('time.hour').mean().plot(x='hour',yscale='log', ylim=[3,500], label=case_name, norm=mcolors.LogNorm(vmin=10,vmax=8e3), cmap='Reds')
 
 # %%
-from sectional_v2.util.plot.colors import get_case_col#(case)
+from oas_dev.util.plot.colors import get_case_col#(case)
 
 # %%
 import matplotlib.colors as mcolors

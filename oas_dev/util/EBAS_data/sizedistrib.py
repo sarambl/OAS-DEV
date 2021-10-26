@@ -1,7 +1,7 @@
 from useful_scit.imps import *
 import datetime
 import matplotlib as mpl
-from sectional_v2.constants import path_EBAS_data
+from oas_dev.constants import path_EBAS_data
 from pathlib import Path
 # %%
 

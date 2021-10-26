@@ -453,7 +453,7 @@ def plot_hist_grid(nsec_d, sec_d, var, unit='cm$^{-3}$', nsec_name='nsec',sec_na
     return f, axs
 
 # %%
-from sectional_v2.constants import collocate_locations
+from oas_dev.constants import collocate_locations
 from useful_scit.util.pd_fix import pd_custom_sort_values
 dall_c = "Dall'Osto 2018 categories"
 sorter = ['North','Center','South (spring)', 'South (winter)', 'Overlap']

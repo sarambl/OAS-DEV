@@ -1,9 +1,9 @@
 from useful_scit.util.make_folders import make_folders
 
-from sectional_v2.util.collocate.collocate import CollocateModel
+from oas_dev.util.collocate.collocate import CollocateModel
 
-from sectional_v2.util.Nd.sizedist_class_v2 import Sizedistribution
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
+from oas_dev.util.Nd.sizedist_class_v2 import Sizedistribution
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionSurface import SizedistributionSurface
 class SizedistributionStation(SizedistributionSurface):
     def __init__(self,*vars, **kwargs):
         #self.diameters= diameter

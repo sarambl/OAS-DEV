@@ -4,12 +4,12 @@ import Ngl
 import xarray as xr
 import numpy as np
 # import matplotlib as mpl
-from sectional_v2 import constants
+from oas_dev import constants
 # from useful_scit.util import log
 import useful_scit.util.log as log
 
-from sectional_v2.util.filenames import get_filename_pressure_coordinate_field
-from sectional_v2.util.practical_functions import extract_path_from_filepath, make_folders
+from oas_dev.util.filenames import get_filename_pressure_coordinate_field
+from oas_dev.util.practical_functions import extract_path_from_filepath, make_folders
 
 default_save_pressure_coordinates = constants.get_outdata_path('pressure_coords')  # 'Data/Fields_pressure_coordinates'
 

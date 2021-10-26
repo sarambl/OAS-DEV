@@ -13,14 +13,14 @@
 # ---
 
 # %%
-from sectional_v2.util.plot.plot_maps import subplots_map, plot_map_diff_only
+from oas_dev.util.plot.plot_maps import subplots_map, plot_map_diff_only
 from useful_scit.imps import (np, plt)
-from sectional_v2.util.imports import get_averaged_fields
+from oas_dev.util.imports import get_averaged_fields
 import cartopy.crs as ccrs
 # load and autoreload
 from IPython import get_ipython
 
-from sectional_v2.util.slice_average.significance import load_and_plot_sign
+from oas_dev.util.slice_average.significance import load_and_plot_sign
 
 try:
     _ipython = get_ipython()
@@ -51,8 +51,8 @@ if avg_over_lev:
 p_levels = [1013.,900., 800., 700., 600.]  # used if not avg
 
 # %%
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
 version='v21dd_both'
 plot_path = get_plotpath('maps')
 filen_base = plot_path+'/_%s'%version

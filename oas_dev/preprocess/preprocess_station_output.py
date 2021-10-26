@@ -1,6 +1,6 @@
-from sectional_v2.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
-from sectional_v2.util.collocate.collocateLONLAToutput import CollocateLONLATout
-from sectional_v2.constants import list_sized_vars_nonsec, list_sized_vars_noresm
+from oas_dev.util.Nd.sizedist_class_v2.SizedistributionBins import SizedistributionStationBins
+from oas_dev.util.collocate.collocateLONLAToutput import CollocateLONLATout
+from oas_dev.constants import list_sized_vars_nonsec, list_sized_vars_noresm
 import useful_scit.util.log as log
 log.ger.setLevel(log.log.INFO)
 

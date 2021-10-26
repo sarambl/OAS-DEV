@@ -15,10 +15,10 @@
 
 # %%
 
-from sectional_v2.util.eusaar_data import *
-import sectional_v2.util.eusaar_data as lfc
-import sectional_v2.util.eusaar_data
-from sectional_v2.constants import get_plotpath
+from oas_dev.util.eusaar_data import *
+import oas_dev.util.eusaar_data as lfc
+import oas_dev.util.eusaar_data
+from oas_dev.constants import get_plotpath
 
 # %%
 # load and autoreload
@@ -35,7 +35,7 @@ except:
 
 
 # %%
-from sectional_v2.constants import get_outdata_path
+from oas_dev.constants import get_outdata_path
 path_in = get_outdata_path('eusaar')
 version ='_noresmv21_dd'
 file_in = path_in + 'Nd_cat_sources_timeseries%s.csv'%version
@@ -69,7 +69,7 @@ trns ={
 
 
 # %%
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 
 # %%
 df = pd.read_csv(file_in, index_col=0)
@@ -85,10 +85,10 @@ c_N = [trns[key] for key in trns.keys()]
 # %%
 df_dic = {}
 for case in cases :
-    _df=sectional_v2.util.eusaar_data.clean_df(df_gd,sc=case).reset_index()
+    _df=oas_dev.util.eusaar_data.clean_df(df_gd,sc=case).reset_index()
     _df['time'] = pd.to_datetime(_df['time'])
     df_dic[case] = _df.set_index('time')
-_df=sectional_v2.util.eusaar_data.clean_df(df_gd,sc=eusaar).reset_index()
+_df=oas_dev.util.eusaar_data.clean_df(df_gd,sc=eusaar).reset_index()
 _df['time'] = pd.to_datetime(_df['time'])
 df_eusaar =_df.set_index('time')
 

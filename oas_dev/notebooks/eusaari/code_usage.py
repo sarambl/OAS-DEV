@@ -15,12 +15,12 @@
 # %%
 # %load_ext autoreload
 # %autoreload 2
-import sectional_v2.util.eusaar_data.flags
-from sectional_v2.constants import path_eusaar_data# path_eusaar_data
+import oas_dev.util.eusaar_data.flags
+from oas_dev.constants import path_eusaar_data# path_eusaar_data
 import numpy as np
-from sectional_v2.util import eusaar_data
-from sectional_v2.util.eusaar_data.histc_vars import load_var_as_dtframe
-from sectional_v2.util.eusaar_data import  distc_var, histc_vars, histsc_hists # import load_var_as_dtframe
+from oas_dev.util import eusaar_data
+from oas_dev.util.eusaar_data.histc_vars import load_var_as_dtframe
+from oas_dev.util.eusaar_data import  distc_var, histc_vars, histsc_hists # import load_var_as_dtframe
 import matplotlib.pyplot as plt
 from useful_scit.plot import get_cmap_dic
 
@@ -71,7 +71,7 @@ plt.ylim([1e0,1e4])
 plt.legend()
 
 # %%
-sectional_v2.util.eusaar_data.flags.load_gd()
+oas_dev.util.eusaar_data.flags.load_gd()
 
 # %% [markdown]
 # ## histsc_hists

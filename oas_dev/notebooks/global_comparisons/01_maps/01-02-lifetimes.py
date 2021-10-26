@@ -13,9 +13,9 @@
 # ---
 
 # %%
-from sectional_v2.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map
+from oas_dev.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map
 from useful_scit.imps import (np, xr, plt, pd) 
-from sectional_v2.util.imports import get_averaged_fields
+from oas_dev.util.imports import get_averaged_fields
 from IPython.display import clear_output
 # load and autoreload
 from IPython import get_ipython
@@ -29,8 +29,8 @@ try:
 except:
     pass
 # %%
-from sectional_v2.util.slice_average.avg_pkg import average_model_var
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.util.slice_average.avg_pkg import average_model_var
+from oas_dev.data_info import get_nice_name_case
 
 # %% [markdown]
 # ## Ideas:
@@ -216,7 +216,7 @@ def comp_lossr(v, ext, _ds):
 
 
 # %%
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 
 # %%
 exts_dic = {
@@ -275,8 +275,8 @@ for v in ['SOA_NA','SO4_NA']:
         ds[f'cb_{v}_tot'] = ds[f'cb_{v}']+ ds[f'cb_{v}_OCW']
 
 # %%
-from sectional_v2.util.slice_average.avg_pkg import average_model_var
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.util.slice_average.avg_pkg import average_model_var
+from oas_dev.data_info import get_nice_name_case
 
 
 # %%

@@ -13,16 +13,16 @@
 # ---
 
 # %%
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
 from IPython.display import clear_output
 
 # %%
 # %%
-from sectional_v2.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map,plot_map_diff_only
+from oas_dev.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map,plot_map_diff_only
 from useful_scit.imps import (np, xr, plt, pd) 
-from sectional_v2.util.imports import get_averaged_fields
-from sectional_v2.util.plot.plot_profiles import plot_profile, set_legend_area_profs, set_scalar_formatter
+from oas_dev.util.imports import get_averaged_fields
+from oas_dev.util.plot.plot_profiles import plot_profile, set_legend_area_profs, set_scalar_formatter
 
 # load and autoreload
 from useful_scit.plot import get_cmap_dic
@@ -87,11 +87,11 @@ import cartopy.crs as ccrs
 
 # %%
 # %%
-from sectional_v2.util.plot.colors import get_area_col
+from oas_dev.util.plot.colors import get_area_col
 from matplotlib.lines import Line2D
 import matplotlib.ticker as mtick
 from matplotlib.ticker import ScalarFormatter
-from sectional_v2.data_info import get_nice_name_case
+from oas_dev.data_info import get_nice_name_case
 
 # %%
 # %%
@@ -104,8 +104,8 @@ areas = ['Global','notLand','landOnly']#, 'Polar N']#,'Polar S']
 areas = ['Global','Polar S','Amazonas and surroundings']
 
 # %%
-from sectional_v2.util.slice_average.significance import hatch_area_sign, calc_sign_over_fields
-from sectional_v2.util.slice_average.avg_pkg import yearly_mean_dic
+from oas_dev.util.slice_average.significance import hatch_area_sign, calc_sign_over_fields
+from oas_dev.util.slice_average.avg_pkg import yearly_mean_dic
 
 # %%
 import seaborn as sns

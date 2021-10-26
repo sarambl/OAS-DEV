@@ -1,8 +1,8 @@
 # %%
-from sectional_v2.util.imports.get_fld_fixed import get_field_fixed
-from sectional_v2.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map, subplots_map, plot_map_diff_2case
+from oas_dev.util.imports.get_fld_fixed import get_field_fixed
+from oas_dev.util.plot.plot_maps import plot_map_diff, fix_axis4map_plot, plot_map_abs_abs_diff, plot_map, subplots_map, plot_map_diff_2case
 from useful_scit.imps import (np, xr, plt, pd)
-from sectional_v2.util.imports import get_averaged_fields
+from oas_dev.util.imports import get_averaged_fields
 from IPython.display import clear_output
 from useful_scit.imps import *
 

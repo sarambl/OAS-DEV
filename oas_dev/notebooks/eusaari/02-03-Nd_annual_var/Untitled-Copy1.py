@@ -13,11 +13,11 @@
 # ---
 
 # %%
-from sectional_v2.util.eusaar_data import *
-from sectional_v2.constants import get_plotpath
-from sectional_v2.util.practical_functions import make_folders
-from sectional_v2.constants import collocate_locations
-from sectional_v2.util.plot.colors import get_case_col
+from oas_dev.util.eusaar_data import *
+from oas_dev.constants import get_plotpath
+from oas_dev.util.practical_functions import make_folders
+from oas_dev.constants import collocate_locations
+from oas_dev.util.plot.colors import get_case_col
 from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes, mark_inset
 from mpl_toolkits.axes_grid1.anchored_artists import AnchoredSizeBar
 
@@ -37,7 +37,7 @@ except:
     pass
 
 # %%
-from sectional_v2.constants import get_outdata_path
+from oas_dev.constants import get_outdata_path
 
 version = '_noresmv21'
 path_in = get_outdata_path('eusaar')

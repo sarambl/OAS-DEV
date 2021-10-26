@@ -2,7 +2,7 @@
 import sys
 import time
 
-from sectional_v2.constants import project_base_path
+from oas_dev.constants import project_base_path
 import subprocess
 import pandas as pd
 import useful_scit.util.log as log
@@ -62,7 +62,7 @@ def launch_monthly_station_output(case, isSectional, max_launches=5, from_time='
     l_df['status'] = l_df.apply(update_stat_proc, axis=1)
     check_stat_proc(l_df)
     pyf = sys.executable  # "/persistent01/miniconda3/envs/env_sec_v2/bin/python3"
-    file = project_base_path + 'OAS-DEV/sectional_v2/notebooks/eusaari/01-preprocess/01-01-preprocess-model-output_station_subproc.py'
+    file = project_base_path + 'OAS-DEV/oas_dev/notebooks/eusaari/01-preprocess/01-01-preprocess-model-output_station_subproc.py'
     log.ger.info(f'Calculating with {pyf}')
     # while loop:
     notDone = True

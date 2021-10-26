@@ -4,13 +4,13 @@ import numpy as np
 import xarray as xr
 from dask.diagnostics import ProgressBar
 
-from sectional_v2.util.practical_functions import make_folders
+from oas_dev.util.practical_functions import make_folders
 import useful_scit.util.log as log
 
-from sectional_v2.constants import get_outdata_path
-from sectional_v2.util.eusaar_data import subs_codes as subset_codes_eusaar
-from sectional_v2.util.eusaar_data.distc_var import percs_in_eusaar_files
-from sectional_v2.util.eusaar_data.flags import make_data_flags
+from oas_dev.constants import get_outdata_path
+from oas_dev.util.eusaar_data import subs_codes as subset_codes_eusaar
+from oas_dev.util.eusaar_data.distc_var import percs_in_eusaar_files
+from oas_dev.util.eusaar_data.flags import make_data_flags
 
 # path_eusaar_outdata
 log.ger.setLevel(log.log.INFO)

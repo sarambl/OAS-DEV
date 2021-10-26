@@ -2,13 +2,13 @@
 import oas_dev.util.naming_conventions.var_info
 # import analysis_tools.fix_xa_dataset as fix_xa_dataset
 # from oas_dev.util.plot import  plot_settings
-from sectional_v2.data_info import get_nice_name_case, get_area_specs
-from sectional_v2.util.slice_average.area_mod import lon180_2lon360
-from sectional_v2.util.slice_average.avg_pkg import average_model_var  # , get_lat_wgts_matrix, masked_average
+from oas_dev.data_info import get_nice_name_case, get_area_specs
+from oas_dev.util.slice_average.area_mod import lon180_2lon360
+from oas_dev.util.slice_average.avg_pkg import average_model_var  # , get_lat_wgts_matrix, masked_average
 # import analysis_tools.area_pkg_sara as area_pkg_sara
 import numpy as np
 import matplotlib.ticker as mticker
-from sectional_v2.util.naming_conventions.var_info import get_fancy_var_name
+from oas_dev.util.naming_conventions.var_info import get_fancy_var_name
 import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 import shapely.geometry as sgeom
@@ -87,7 +87,7 @@ def plot_map(var, case, cases_dic, figsize=None,
         kwargs_abs['cmap'] = cmap_abs
 
 
-    label = get_fancy_var_name(var) + ' [%s]' % sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(plt_var,
+    label = get_fancy_var_name(var) + ' [%s]' % oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(plt_var,
                                                                                                                 var)
     cba_kwargs = dict(aspect=12, label=label)
     if cbar_orientation=='horizontal':
@@ -102,7 +102,7 @@ def plot_map(var, case, cases_dic, figsize=None,
         kwargs_abs['cbar_kwargs'] = cba_kwargs
     ax, im = plt_map(plt_var, ax, figsize, **kwargs_abs,**kwargs)
 
-    unit = sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(plt_var, var)
+    unit = oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(plt_var, var)
     glob_avg_ctrl = get_global_avg_map(case, cases_dic, var)  # .values
     glob_diff = ', $\mu$=%.1f %s' % (glob_avg_ctrl, unit)
 
@@ -148,7 +148,7 @@ def plot_map_diff(var, case_ctrl, case_oth, cases_dic, figsize=None, relative=Fa
 
     else:
         func = fdifference
-        unit_diff = ' [%s]' % sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(ctrl_da, var)
+        unit_diff = ' [%s]' % oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(ctrl_da, var)
         label = '$\Delta$'+ get_fancy_var_name(var) + unit_diff
 
     #get_vmin_vmax(plt_not_ctrl)
@@ -496,7 +496,7 @@ def get_avg_diff(case_oth, case_ctrl, case_dic, relative, var):
         return ', $\mu$=%.2f %%' % _a
     else:
         _a = (glob_avg_oth - glob_avg_ctrl)
-        unit = sectional_v2.util.naming_conventions.var_info.get_fancy_unit_xr(case_dic[case_ctrl][var], var)
+        unit = oas_dev.util.naming_conventions.var_info.get_fancy_unit_xr(case_dic[case_ctrl][var], var)
         return ', $\mu$=%.2f %s' % (_a, unit)
 
 
